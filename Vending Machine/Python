@@ -1,0 +1,150 @@
+#Vending Machine V.1
+print("   =====MENU=====\n")
+print("   ---Snacks---")
+print("1   Nova     2 Aed\n")
+print("2   Chippy   2 Aed\n")
+print("3   Fritos   2 Aed\n")
+print("4   Cheetos  2 Aed\n")
+print("5   Doritos  2 Aed\n")
+print("6   Lays     2 Aed\n")
+
+print("    ---Drinks---")
+print("7   Pepsi    3 Aed\n")
+print("8   Sprite   3 Aed\n")
+print("9   Fanta    3 Aed\n")
+print("10  Cola     3 Aed\n")
+print("11  Miranda  3 Aed\n")
+print("12  7up      3 Aed\n")
+
+#Entering the money
+amount_in = (int(input('Insert amount:\n')))
+#Entering the item ID
+order_code = input('Enter item ID:\n')
+
+#picking the item and checking if the amount given is enough
+def ORDER():
+  if amount_in <=1:
+    print('need more money')
+
+  if order_code == "1":
+    if amount_in >= 2:
+      amount_return = amount_in - 2
+      print("Nova Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "2":
+    if amount_in >= 5:
+      amount_return = amount_in - 2
+      print("Chippy Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "3":
+    if amount_in >= 2:
+      amount_return = amount_in - 2
+      print("Fritos Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "4":
+    if amount_in >= 2:
+      amount_return = amount_in - 2
+      print("Cheetos Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "5":
+    if amount_in >= 5:
+      amount_return = amount_in - 2
+      print("Doritos Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "6":
+    if amount_in >= 2:
+      amount_return = amount_in - 2
+      print("Lays Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "7":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("Pepsi Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "8":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("Sprite Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "9":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("Fanta Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "10":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("Cola Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "11":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("Miranda Dispensing now\n Your change is", amount_return, 'aed')
+
+  if order_code == "12":
+    if amount_in >= 3:
+      amount_return = amount_in - 3
+      print("7up Dispensing now\n Your change is", amount_return, 'aed')
+
+
+ORDER()
+
+#Vending Machine V.2
+print ("Vending Machine")
+print ("=====MENU=====")
+print ("List of Products6:")
+print ("1. Water = 1.50 AED")
+print ("2. Cola = 3 AED")
+print ("3. 7UP = 3 AED")
+print ("4. Sprite = 3 AED")
+print ("5. Mirinda = 3 AED")
+print ("6. Fanta = 3 AED")
+print ("7. Iced Latte = 6 AED")
+print ("8. Hot Chocolate = 6 AED")
+print ("9. Expresso = 6 AED")
+print ("10. Apple Juice = 4 AED")
+print ("11. Orange Juice = 4 AED")
+print ("12. Pineapple Juice = 4 AED")
+print ("=====================================")
+
+drink_choice = int(input("Please input your item of choice: "))
+
+if drink_choice == 1:
+    print ("You have selected water")
+
+elif drink_choice == 2:
+    print ("You have selected Cola")
+
+elif drink_choice == 3:
+    print ("You have selected 7UP")
+
+elif drink_choice == 4:
+    print ("You have selected Sprite")
+
+elif drink_choice == 5:
+    print ("You have selected Miranda")
+
+elif drink_choice == 6:
+    print ("You have selected Fanta")
+
+elif drink_choice == 7:
+    print ("You have selected Iced Latte")
+
+elif drink_choice == 8:
+    print ("You have selected Hot Chocolate")
+
+elif drink_choice == 9:
+    print ("You have selected Expresso")
+
+elif drink_choice == 10:
+    print ("You have selected Apple Juice")
+
+elif drink_choice == 11:
+    print ("You have selected Orange Juice")
+
+elif drink_choice == 12:
+    print ("You have selected Pineapple Juice")
+
+else:
+    print ("You did not make a valid selection, please try again")
+
